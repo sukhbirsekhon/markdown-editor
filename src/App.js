@@ -39,18 +39,23 @@ class App extends Component {
   
     return (
       <div className='container'>
+
         <div className='row'>
+
           <div className='col-sm-6'>
             <textarea
               onChange={this.handleChange}
               value={this.state.text}
               className='form-control dark-mode'
-              rows='35' />
+              rows='35' id='editor'/>
           </div>
-          <div className='col-sm-6 dark-mode'>
-            <div className='dark-mode' dangerouslySetInnerHTML={this.renderText(this.state.text)} />
+
+          <div className='col-sm-6 dark-mode' id='output'>
+            <div className='dark-mode' id='outputText' dangerouslySetInnerHTML={this.renderText(this.state.text)} />
           </div>
+
         </div>
+
       </div>
     )
   }

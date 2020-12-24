@@ -22,10 +22,21 @@
     <title>React App</title>
   </head>
   <body>
+    <button onclick="hideShow()" style="background-color: #555555;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;" id="editButton">Preview</button>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
     <div id="root"></div>
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -36,5 +47,25 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      function hideShow() {
+        var editor = document.getElementById("editor");
+        var output = document.getElementById("output");
+        var outputText = document.getElementById("outputText");
+        var editButton = document.getElementById("editButton");
+
+        if (editor.style.display === "none") {
+          editor.style.display = "block";
+          output.classList.add("col-sm-6");
+          editButton.innerHTML="Preview";
+        } else {
+          editor.style.display = "none";
+          output.classList.remove("col-sm-6");
+          output.style.overflow = "hidden";
+          editButton.innerHTML="Edit";
+        }
+      }
+      </script>
   </body>
 </html>
+
