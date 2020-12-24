@@ -5,6 +5,7 @@ body {
   textarea {
     background-color: #1A2634 !important;
     color: white !important; 
+    font-size: small !important;
   }
   
   a {
@@ -31,4 +32,6 @@ body {
   #output {
     visibility: hidden;
     margin: 5%;
+    font-size: small !important;
+
   }
