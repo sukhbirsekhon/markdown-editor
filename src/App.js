@@ -41,22 +41,23 @@ class App extends Component {
       <div className='container'>
 
         <div className='row'>
-
-          <div className='col-sm-6'>
+          <div className='col-sm-12'>
             <textarea
               onChange={this.handleChange}
               value={this.state.text}
               className='form-control dark-mode'
               rows='35' id='editor'/>
           </div>
+        </div>
 
+        <div className='row'>
           <div className='col-sm-6 dark-mode' id='output'>
             <div className='dark-mode' id='outputText' dangerouslySetInnerHTML={this.renderText(this.state.text)} />
           </div>
-
         </div>
 
       </div>
+      
     )
   }
 }

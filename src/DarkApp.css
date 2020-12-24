@@ -1,9 +1,9 @@
 body {
-    background-color: black;
+    background-color: #0D1219;
   }
   
   textarea {
-    background-color: black !important;
+    background-color: #1A2634 !important;
     color: white !important; 
   }
   
@@ -16,25 +16,19 @@ body {
   }
   
   .container {
-    background-color: black;
+    background-color: #1A2634;
     color: white;
     margin-top: 24px;
+    padding: 0;
   }
   
   .form-control {
     color: white;
-    background-color: black;
-    background-clip: padding-box;
-    border: 1px solid lightsalmon;
+    background-color: #1A2634;
+    border: none;
   }
 
-  .button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+  #output {
+    visibility: hidden;
+    margin: 5%;
   }
